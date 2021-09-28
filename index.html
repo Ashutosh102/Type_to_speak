@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Type T o Speak</title>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+      <div class="container">
+        <div class="title-box center">Type To Speak</div>
+      <form id="form">
+        <div class="form-group">
+          <textarea
+            class="textarea-cont margin-radius"
+            id="text-input"
+            cols="30"
+            rows="5"
+            placeholder="Type anything..."
+          ></textarea>
+          <div class="container less-width">
+            <label for="rate" class="text-size center label-pos margin-radius">Rate</label>
+            <div id="rate-value" class="float-right">1</div>
+            <input type="range" class="input-range margin-radius" id="rate" min="0" max="2" value="1" step="0.1">
+
+            <label for="pitch" class="text-size center label-pos margin-radius">Pitch</label>
+            <div class="float-right" id="pitch-value">1</div>
+            <input type="range" class="input-range margin-radius" id="pitch" min="0" max="2" value="1" step="0.1">
+
+          </div>
+            <label class="text-size speaker-select-label">Choose the speaker:</label>
+            <select id="voice-select" class="form-control margin-radius"></select>
+        </div>
+        <button class="btn margin-radius">Speak</button>
+      </form>
+    </div>
+  </body>
+   
+</html>
